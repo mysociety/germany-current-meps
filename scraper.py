@@ -8,8 +8,6 @@ members = []
 
 for member in root:
 
-    print member.find('fullName').text.title()
-
     member = {
         'id': member.find('id').text,
         'name': member.find('fullName').text.title(),
